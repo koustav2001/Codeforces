@@ -1,0 +1,23 @@
+s=input()
+c1,c0,f=0,0,0
+for i in s:
+    if(i=='0'):
+        c0+=1
+        c1=0
+        if(c0==7):
+            f=1
+            break
+        else:
+            continue
+    elif(i=='1'):
+        c1+=1
+        c0=0
+        if(c1==7):
+            f=1
+            break
+        else:
+            continue
+if(f==1):
+    print("YES")
+else:
+    print("NO")
